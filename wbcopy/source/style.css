@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "sport";
+    src: url(./fonts/Bitter-Black.ttf);
+}
+
+@font-face {
+    font-family: "lcd";
+    src: url(./fonts/lcd.ttf);
+}
+
+body {
+    background: linear-gradient(300deg, rgba(0,39,11,1) 0%, rgba(0,80,60,1) 100%);
+    height: 100vh;
+    color: #AB9D60;
+    display: flex;
+    justify-content: space-between;
+    font-family: "sport";
+}
+
+#particles-js {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity:0.75;
+}
+
+#name {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+}
+
+#section_one {
+    position: relative;
+    z-index: 2;
+    margin: 64px 1% 64px 64px;
+    /* background-color: coral; */
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    /* background-color: #AB9D60; */
+    /* border: solid aqua; */
+    width: 24%;
+    margin: 64px 64px 64px 1%;
+    position: relative;
+    z-index: 2;
+}
+
+#header_and_time {
+    height: 50%;
+}
+
+header {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header #logo {
+    width: 30%;
+}
+
+header #logo img {
+    height: 80%
+}
+
+.contacts {
+    width: 30%;
+}
+
+.contacts .icons {
+    width: 7%;
+}
+
+/* time */
+
+#time_block {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+#time_block div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.real_time {
+    font-family: "lcd";
+    font-size: 160px;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    width: 40%;
+}
+
+#shadow {
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+#time {
+    position: absolute;
+}
+
+#temp_img {
+    width: 84px;
+}
+
+/* news */
+
+.cube {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* animation: rotateCube 30s infinite linear; */
+    /* margin: 0 auto 20px; */
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 20px);
+    /* border: dashed 1px #043a41; */
+    background-color: #ab9d60;
+    color: #003e26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 10px 12px;
+}
+
+#news_orna {
+    height: 100%;
+    width: 52px;
+}
+
+.orna_img {
+    height: calc(100% / 3 - 2px);
+}
+
+#news_photo_div {
+    height: 100%;
+}
+
+#news_photo {
+    height: 100%;
+    margin: 0 15px;
+}
+
+.data {
+    font-size: 24px !important;
+}
+
+.sell {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 300px;
+}
+
+#news_text {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: fixed;
+}
+
+.content-text {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+
+#news_text h1 {
+    font-size: 66px;
+}
+
+#news_text p{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* main */
+
+main {
+    
+    color: #003e26;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#first {
+    padding: 60px 36px 24px 50px;
+    background-color: #AB9D60;
+    height: 50%;
+}
+
+main .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+main .icons img {
+    height: 32px;
+}
+
+#QR_code {
+    display: flex;
+    justify-content: space-between;
+}
+
+#QR_code img{
+    width: 30%;
+    margin-top: 12px;
+}
+
+#main_text_info {
+    border: solid 24px;
+    /* background: linear-gradient(300deg, rgba(0,39,11,1) 0%, rgba(0,80,60,1) 100%); */
+    height: 60%;
+    color: #AB9D60;
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main_text_info h2 {
+    font-size: 28px;
+}
+
+#main_text_info p {
+    font-size: 22px;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.orda_jelileri {
+    font-size: 22px;
+    text-align: center;
+}
